@@ -1,0 +1,7 @@
+To compile and install, run maven using the appropriate target, eg:
+mvn install
+
+To run, run the class test.rest.StartJerseyRestServer with one argument, which is the port that the rest server is to listen on. For example
+java -classpath <path-to-jar> -Dserver.port=15000 test.rest.StartSpringRestServer
+
+The two algorithms provided map to the URLs /prime and /prime2. Both URLs require a GET call with two query string parameters named 'from' and 'to'.
